@@ -1,0 +1,117 @@
+header{
+    .header-up{
+        background-color: $color1;
+        .header-icons{
+            color: white;
+            padding: 13px 0px;
+            i{
+                padding-right:30px;
+                font-size: 14px;
+            }
+        }
+        .header-register{
+            color: white;
+            span{
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+    .header-middle{
+        border-bottom: 1px dashed #F7F7F7;
+        .header-category{
+            padding: 25px 0;
+            text-align: left;
+            a{
+                color: white;
+                background-color: $color2;
+                padding: 10px 20px;
+                font-size: 20px;
+                font-weight: 600;
+                i{
+                    padding-right: 15px;
+                }
+            }
+        }
+        .header-logo{
+            text-align: center;
+            img{
+                height: 50px;
+                padding-right: 140px;
+            }
+        }
+        .header-right-icons{
+            i{
+                font-size: 30px;
+                padding-left: 25px;
+            }
+        }
+    }
+    .header-end{
+        .header-menu{
+            ul{
+                li{
+                    &.drop-list{
+                        position: relative;
+                        .dropped{
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .4s ease-in-out;
+                            background-color: $color1;
+                            width: 250px;
+                            position: absolute;
+                            left: 15px;
+                            top:40px;
+                            li{
+                                padding-top: 7px;
+                                padding-bottom: 7px;
+                                transition: .3s ease-in-out;
+                                &:hover{
+                                    transform: translateX(3px);
+                                }
+                                a{
+                                    color: white;
+                                    &:hover{
+                                        color:$color2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        a{
+                            color: $color2;
+                        }
+                        .dropped{
+                            opacity: 1;
+                            visibility:visible;
+                            transform: translateY(10px);
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $color1;
+                        font-weight: 600;
+                        padding-right: 25px;
+                        padding-left: 10px;
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+        }
+        .header-phone{
+            margin-top: 7px;
+            a{
+                color: white;
+                background-color: $color2;
+                font-size: 19px;
+                font-weight: 400;
+                padding: 22px 47px;
+                transition: .4s ease-in-out;
+                &:hover{
+                    color:black;   
+                }
+            }
+        }
+    }
+}

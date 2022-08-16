@@ -1,0 +1,26 @@
+$color1:  #1C1919;
+$color2: #3CB371;
+$color3: #008000;
+$color4: #F7F7F7;
+
+.line1{
+    width: 3px;
+    height:45px;
+    background-color: $color2;
+}
+
+.line2{
+    width: 3px;
+    height: 45px;
+    background-color: $color1;
+}
+
+.line3{
+    width: 3px;
+    height: 45px;
+    background-color: white;
+}
+
+.bg-qara{
+    background-color: #1C1919;
+}
